@@ -1,0 +1,232 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('Marble_background.jpg'); /* Set the background image */
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #333;
+}
+
+/* Navigation Bar Styling */
+.navbar {
+    background-color: #222; /* Dark background color */
+    padding: 1rem;
+}
+
+.nav-list {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-item {
+    margin: 0 1rem;
+}
+
+.nav-link {
+    color: #ccc; /* Grey color for links */
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.nav-link:hover {
+    color: #fc0303; /* Change to your preferred hover color */
+    text-decoration: bold;
+}
+
+/* Responsive Design for Navigation Bar */
+@media (max-width: 768px) {
+    .nav-list {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-item {
+        margin: 0.5rem 0;
+    }
+}
+
+
+/* Download resume button */
+
+/* Container for the download button */
+.download-container {
+    text-align: center;
+}
+
+/* Styles for the download button */
+.download-button {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+    margin-top: 1cm;
+}
+
+.download-button:hover {
+    background-color: #0056b3;
+    transform: translateY(-3px);
+}
+
+.download-button:active {
+    background-color: #00408b;
+    transform: translateY(0);
+}
+
+
+
+/* Main Section */
+
+.resume-section {
+    padding: 3rem 1rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 2rem auto;
+    max-width: 90%;
+}
+
+.resume-section h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: #222;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.resume-block {
+    margin-bottom: 2rem;
+}
+
+.resume-block h3 {
+    font-size: 2rem;
+    color: #333;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.resume-item {
+    margin-bottom: 1.5rem;
+}
+
+.resume-item h4 {
+    font-size: 1.5rem;
+    color: #444;
+    margin-bottom: 0.5rem;
+}
+
+.resume-item p,
+.resume-item em,
+.resume-item strong,
+.resume-item ul {
+    font-size: 1rem;
+    color: #555;
+}
+
+.resume-item ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+}
+
+.resume-item ul li {
+    margin-bottom: 0.5rem;
+}
+
+/* Skills Section */
+.resume-block ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    columns: 2;
+}
+
+.resume-block ul li {
+    background-color: #e0e0e0;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem;
+    border-radius: 4px;
+}
+
+
+
+
+/* Footer Styling */
+.footer {
+    background-color: #222;
+    color: #ccc;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.footer-links,
+.footer-contact,
+.footer-social {
+    margin-bottom: 1rem;
+}
+
+.footer-link,
+.footer-email,
+.footer-phone,
+.footer-social-link {
+    color: #ccc;
+    text-decoration: none;
+    margin: 0 0.5rem;
+}
+
+.footer-link:hover,
+.footer-email:hover,
+.footer-phone:hover,
+.footer-social-link:hover {
+    color: #fc0303;
+    text-decoration: bold;
+}
+
+.footer-bottom {
+    border-top: 1px solid #444;
+    padding-top: 1rem;
+    font-size: 0.875rem;
+}
+
+@media (min-width: 768px) {
+    .footer-content {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    
+    .footer-links,
+    .footer-contact,
+    .footer-social {
+        margin-bottom: 0;
+    }
+}
