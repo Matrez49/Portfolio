@@ -1,0 +1,203 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    background-image: url('Marble_background.jpg'); /* Set the background image */
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+
+/* Navigation Bar Styling */
+.navbar {
+    background-color: #222; /* Dark background color */
+    padding: 1rem;
+}
+
+.nav-list {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-item {
+    margin: 0 1rem;
+}
+
+.nav-link {
+    color: #ccc; /* Grey color for links */
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.nav-link:hover {
+    color: #fc0303; /* Change to your preferred hover color */
+    text-decoration: bold;
+}
+
+/* Responsive Design for Navigation Bar */
+@media (max-width: 768px) {
+    .nav-list {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-item {
+        margin: 0.5rem 0;
+    }
+}
+
+
+
+/* Page Title */
+.page-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: #222;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* Download Block Styling */
+.download-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.block-content {
+    max-width: 70%;
+}
+
+.download-title {
+    font-size: 1.75rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.download-date {
+    font-size: 0.875rem;
+    color: #777;
+    margin-bottom: 1rem;
+}
+
+.doc-type {
+    font-size: 0.875rem;
+    color: #777;
+    margin-bottom: 1rem;
+}
+
+.download-description {
+    font-size: 1rem;
+    color: #555;
+}
+
+.download-button {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.download-button:hover {
+    background-color: #0056b3;
+    transform: translateY(-3px);
+}
+
+.download-button:active {
+    background-color: #00408b;
+    transform: translateY(0);
+}
+
+
+
+/* Footer Styling */
+.footer {
+    background-color: #222;
+    color: #ccc;
+    padding: 2rem 1rem;
+    text-align: left;
+}
+
+.footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.footer-links,
+.footer-contact,
+.footer-social {
+    margin-bottom: 1rem;
+}
+
+.footer-link,
+.footer-email,
+.footer-phone,
+.footer-social-link {
+    color: #ccc;
+    text-decoration: none;
+    margin: 0 0.5rem;
+}
+
+.footer-link:hover,
+.footer-email:hover,
+.footer-phone:hover,
+.footer-social-link:hover {
+    color: #fc0303;
+    text-decoration: bold;
+}
+
+.footer-bottom {
+    border-top: 1px solid #444;
+    padding-top: 1rem;
+    font-size: 0.875rem;
+}
+
+@media (min-width: 768px) {
+    .footer-content {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    
+    .footer-links,
+    .footer-contact,
+    .footer-social {
+        margin-bottom: 0;
+    }
+}
